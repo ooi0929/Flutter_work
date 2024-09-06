@@ -28,6 +28,58 @@
       ]
     },
     {
+      "name": "Instagram",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_instagram.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "Instagram Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_instagram.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+    {
+      "name": "Onboarding",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_onboarding.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "Onboarding Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_onboarding.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+    {
       "name": "Default",
       "type": "dart",
       "request": "launch",
