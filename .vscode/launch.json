@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Hello Flutter",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_hello_flutter.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "Hello Flutter Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_hello_flutter.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+    {
+      "name": "Default",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Compound",
+      "configurations": []
+    }
+  ]
+}
