@@ -1,7 +1,7 @@
-import 'package:dev_story_project/textbook/ch01/main.dart';
+import 'package:dev_story_project/textbook/ch01/hello_flutter.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
 }
 
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Container(),
+      home: HelloFlutter(),
     );
   }
 }
