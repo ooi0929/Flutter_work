@@ -35,6 +35,7 @@ enum SupportOrientation {
   orientation,
 }
 
+// Singleton 적용
 class Environment {
   final BuildType _buildType;
   BuildType get buildType => _buildType;
@@ -44,6 +45,7 @@ class Environment {
 
   const Environment._internal(this._buildType);
   factory Environment.newInstance(BuildType buildType) {
+    // factory를 사용함으로써 생성자에서 인스턴스 생성가능
     _instance ??= Environment._internal(buildType);
     return _instance!;
   }
