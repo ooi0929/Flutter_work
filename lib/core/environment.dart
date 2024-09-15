@@ -3,15 +3,17 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_workspace/hello_flutter/page/hello_flutter.dart';
-import 'package:flutter_workspace/instagram/page/instagram.dart';
-import 'package:flutter_workspace/onboarding/page/onboarding.dart';
+import '../hello_flutter/page/hello_flutter.dart';
+import '../instagram/page/instagram.dart';
+import '../onboarding/page/onboarding.dart';
 import 'main_common.dart';
 
 enum BuildType {
   helloFlutter,
   instagram,
-  onboarding;
+  onboarding,
+  navigatorEx,
+  goRouterEx;
 
   const BuildType();
 

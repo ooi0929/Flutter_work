@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_workspace/onboarding/page/my_app_onboarding.dart';
-import 'package:flutter_workspace/onboarding/page/onboarding.dart';
 
+import '../onboarding/page/my_app_onboarding.dart';
+import '../onboarding/page/onboarding.dart';
 import 'environment.dart';
 import 'my_app.dart';
 
