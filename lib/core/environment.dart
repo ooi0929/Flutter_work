@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import '../hello_flutter/page/hello_flutter.dart';
 import '../instagram/page/instagram.dart';
 import '../onboarding/page/onboarding.dart';
@@ -11,9 +12,7 @@ import 'main_common.dart';
 enum BuildType {
   helloFlutter,
   instagram,
-  onboarding,
-  navigatorEx,
-  goRouterEx;
+  onboarding;
 
   const BuildType();
 

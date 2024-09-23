@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../onboarding/page/my_app_onboarding.dart';
-import '../onboarding/page/onboarding.dart';
 import 'environment.dart';
 import 'my_app.dart';
 
@@ -13,9 +11,5 @@ Future<void> mainCommon() async {
   await SystemChrome.setPreferredOrientations(Environment.supportedOrientation);
   await SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
 
-  if (Environment.instance is Onboarding) {
-    runApp(MyAppOnboarding());
-  } else {
-    runApp(const MyApp());
-  }
+  runApp(const MyApp());
 }
