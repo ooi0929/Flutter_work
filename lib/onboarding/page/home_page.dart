@@ -9,15 +9,20 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  late SharedPreferences prefs;
+
+  @override
+  void initState() {
+    super.initState();
+    _initPrefs();
+  }
+
+  void _initPrefs() async {
+    prefs = await SharedPreferences.getInstance();
+  }
+
   @override
   Widget build(BuildContext context) {
-    late SharedPreferences prefs;
-
-    initState() async {
-      super.context;
-      prefs = await SharedPreferences.getInstance();
-    }
-
     return Scaffold(
       appBar: AppBar(
         title: Text("HomePage"),
