@@ -23,7 +23,7 @@ class _TodoState extends State<Todo> {
   @override
   void initState() {
     super.initState();
-    // 초기 데이터 초기화
+    // 초기 데이터 초기화``
     _loadTodoList();
   }
 
