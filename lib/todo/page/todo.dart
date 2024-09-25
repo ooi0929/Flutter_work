@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'component/todo_item.dart';
+import '../component/todo_item.dart';
 import 'todo_add.dart';
 
 class Todo extends StatefulWidget {
@@ -23,7 +23,7 @@ class _TodoState extends State<Todo> {
   @override
   void initState() {
     super.initState();
-    // 초기 데이터 초기화``
+    // 초기 데이터 초기화
     _loadTodoList();
   }
 
