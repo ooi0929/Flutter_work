@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class OnboardingDone extends StatefulWidget {
+  const OnboardingDone({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<OnboardingDone> createState() => _OnboardingDoneState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _OnboardingDoneState extends State<OnboardingDone> {
   late SharedPreferences prefs;
 
   @override
@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
     _initPrefs();
   }
 
-  void _initPrefs() async {
+  Future<void> _initPrefs() async {
     prefs = await SharedPreferences.getInstance();
   }
 

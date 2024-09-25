@@ -3,6 +3,8 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_workspace/calculator/page/calculator.dart';
+import 'package:flutter_workspace/todo/page/todo.dart';
 
 import '../hello_flutter/page/hello_flutter.dart';
 import '../instagram/page/instagram.dart';
@@ -12,7 +14,9 @@ import 'main_common.dart';
 enum BuildType {
   helloFlutter,
   instagram,
-  onboarding;
+  onboarding,
+  calculator,
+  todo;
 
   const BuildType();
 
@@ -24,6 +28,10 @@ enum BuildType {
         return Instagram();
       case BuildType.onboarding:
         return Onboarding();
+      case BuildType.calculator:
+        return Calculator();
+      case BuildType.todo:
+        return Todo();
       default:
         return Container();
     }

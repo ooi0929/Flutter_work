@@ -5,7 +5,6 @@ import 'environment.dart';
 import 'my_app.dart';
 
 Future<void> mainCommon() async {
-  // main() 함수에서 async를 쓰려면 필요
   WidgetsFlutterBinding.ensureInitialized();
 
   await SystemChrome.setPreferredOrientations(Environment.supportedOrientation);

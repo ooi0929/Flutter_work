@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_workspace/onboarding/page/home_page.dart';
+import 'package:flutter_workspace/onboarding/page/onboarding_done.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -12,6 +12,8 @@ class Onboarding extends StatefulWidget {
 
 class _OnboardingState extends State<Onboarding> {
   late SharedPreferences prefs;
+  bool isOnboarded = false;
+  bool isLoading = true;
 
   @override
   void initState() {
@@ -19,16 +21,29 @@ class _OnboardingState extends State<Onboarding> {
     _initPrefs();
   }
 
+  // 비동기로 실행하기에 build() 내부에 isOnboarded를 작성하면 에러 발생
+  // 완전히 초기화가 진행될때까지 기다리는 구문이 필요함.
   Future<void> _initPrefs() async {
     prefs = await SharedPreferences.getInstance();
+    setState(() {
+      isOnboarded = prefs.getBool('isOnboarded') ?? false;
+      isLoading = false; // 초기화 완료 후 로딩 상태를 false로 변경
+    });
   }
 
   @override
   Widget build(BuildContext context) {
-    bool isOnboarded = prefs.getBool('onBoared') ?? false;
+    if (isLoading) {
+      return Scaffold(
+        body: Center(
+          child: CircularProgressIndicator(),
+        ),
+      );
+    }
 
     return isOnboarded
-        ? Scaffold(
+        ? OnboardingDone()
+        : Scaffold(
             body: IntroductionScreen(
               pages: [
                 // 첫 번째 페이지
@@ -80,16 +95,26 @@ class _OnboardingState extends State<Onboarding> {
               ),
               onDone: () async {
                 // Done 클릭시 isOnboarded = true로 저장
-                prefs.setBool("isOnboarded", true);
+                await prefs.setBool("isOnboarded", true);
 
                 // When done button is press
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
-                );
+                // Navigator.pushReplacement(
+                //   context,
+                //   MaterialPageRoute(builder: (context) => HomePage()),
+                // );
+                _navigatorOnboarding();
               },
             ),
-          )
-        : HomePage();
+          );
+  }
+
+  // Buildcontext 파라미터는 async가 있는 블록내에서 사용하지 않는 것이 좋다.
+  void _navigatorOnboarding() {
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+        builder: (context) => OnboardingDone(),
+      ),
+    );
   }
 }
