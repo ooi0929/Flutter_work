@@ -105,7 +105,6 @@
         "--disable-web-security",
       ]
     },
-    
     {
       "name": "Todo",
       "type": "dart",
@@ -123,6 +122,32 @@
       "type": "dart",
       "request": "launch",
       "program": "lib/main_todo.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+    {
+      "name": "Bucket List",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_bucket_list.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "Bucket List Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_bucket_list.dart",
       "args": [
         "-d",
         "chrome",
