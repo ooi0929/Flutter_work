@@ -158,6 +158,32 @@
       ]
     },
     {
+      "name": "Number Quiz",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_number_quiz.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "Number Quiz Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_number_quiz.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+    {
       "name": "Default",
       "type": "dart",
       "request": "launch",

@@ -8,6 +8,7 @@ import '../bucket_list/page/bucket_list.dart';
 import '../calculator/page/calculator.dart';
 import '../hello_flutter/page/hello_flutter.dart';
 import '../instagram/page/instagram.dart';
+import '../number_quiz/number_quiz.dart';
 import '../onboarding/page/onboarding.dart';
 import '../todo/page/todo.dart';
 import 'main_common.dart';
@@ -17,6 +18,7 @@ enum BuildType {
   instagram,
   onboarding,
   bucketList,
+  numberQuiz,
   calculator,
   todo;
 
@@ -32,6 +34,8 @@ enum BuildType {
         return Onboarding();
       case BuildType.bucketList:
         return BucketList();
+      case BuildType.numberQuiz:
+        return NumberQuiz();
       case BuildType.calculator:
         return Calculator();
       case BuildType.todo:
