@@ -3,13 +3,15 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_workspace/bucket_list_with_firebase/page/Login.dart';
 
 import '../bucket_list/page/bucket_list.dart';
 import '../calculator/page/calculator.dart';
 import '../hello_flutter/page/hello_flutter.dart';
 import '../instagram/page/instagram.dart';
-import '../number_quiz/number_quiz.dart';
+import '../number_quiz/page/number_quiz.dart';
 import '../onboarding/page/onboarding.dart';
+import '../random_cat/page/random_cat.dart';
 import '../todo/page/todo.dart';
 import 'main_common.dart';
 
@@ -19,6 +21,8 @@ enum BuildType {
   onboarding,
   bucketList,
   numberQuiz,
+  randomCat,
+  bucketListWithFirebase,
   calculator,
   todo;
 
@@ -36,6 +40,10 @@ enum BuildType {
         return BucketList();
       case BuildType.numberQuiz:
         return NumberQuiz();
+      case BuildType.randomCat:
+        return RandomCat();
+      case BuildType.bucketListWithFirebase:
+        return Login();
       case BuildType.calculator:
         return Calculator();
       case BuildType.todo:

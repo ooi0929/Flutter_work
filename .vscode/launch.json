@@ -184,12 +184,63 @@
       ]
     },
     {
+      "name": "Random Cat",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_random_cat.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "Random Cat Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_random_cat.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+    {
+      "name": "Bucket List With Firebase",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_bucket_list_with_firebase.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "Bucket List With Firebsae Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_bucket_list_with_firebase.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+    {
       "name": "Default",
       "type": "dart",
       "request": "launch",
       "program": "lib/main.dart"
     },
-    
   ],
   "compounds": [
     {
