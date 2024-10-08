@@ -2,9 +2,9 @@
   "editor.fontFamily": "D2Coding ligature, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "dart.flutterSdkPaths": [
-    "C:/flutter_windows_3.24.1-stable/flutter"
+    "/Users/ooi0929/Developments/flutter"
   ],
-  "dart.flutterSdkPath": "C:/flutter_windows_3.24.1-stable/flutter",
+  "dart.flutterSdkPath": "/Users/ooi0929/Developments/flutter",
   "editor.rulers": [
     150
   ],
