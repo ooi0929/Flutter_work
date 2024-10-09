@@ -23,14 +23,23 @@ class _CreatePageState extends State<CreatePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("버킷리스트 작성"),
+        title: Text(
+          "버킷리스트 작성",
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
         // 뒤로가기 버튼
         leading: IconButton(
-          icon: Icon(CupertinoIcons.chevron_back),
+          icon: Icon(
+            CupertinoIcons.chevron_back,
+            color: Colors.white,
+          ),
           onPressed: () {
             Navigator.pop(context);
           },
         ),
+        backgroundColor: Colors.blue,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -56,10 +65,15 @@ class _CreatePageState extends State<CreatePage> {
               width: double.infinity,
               height: 48,
               child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: LinearBorder(),
+                  backgroundColor: Colors.blue,
+                ),
                 child: Text(
                   "추가하기",
                   style: TextStyle(
                     fontSize: 18,
+                    color: Colors.white,
                   ),
                 ),
                 onPressed: () {
