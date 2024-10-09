@@ -11,13 +11,14 @@ class Feed extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // 좋아요 여부
     final isFavorite = ValueNotifier(false);
 
     return Column(
       children: [
         // 이미지
         Image.network(
-          imageUrl,
+          imageUrl, // imageUrl 가져오기
           height: 400,
           width: double.infinity,
           fit: BoxFit.cover,
@@ -27,9 +28,11 @@ class Feed extends StatelessWidget {
           children: [
             IconButton(
               onPressed: () {
+                // 해당 값이 변경될 때
                 isFavorite.value = !isFavorite.value;
               },
               icon: ValueListenableBuilder(
+                // 해당 부분만 화면 갱신
                 valueListenable: isFavorite,
                 builder: (context, isFavorite, _) {
                   return Icon(
