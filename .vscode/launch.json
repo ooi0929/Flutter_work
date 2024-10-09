@@ -106,58 +106,6 @@
       ]
     },
     {
-      "name": "Calculator",
-      "type": "dart",
-      "request": "launch",
-      "program": "lib/main_calculator.dart",
-      "args": [
-        // "--release",
-        // "--profile",
-        // "--flavor",
-        // "OneStore",
-      ]
-    },
-    {
-      "name": "Calculator Web",
-      "type": "dart",
-      "request": "launch",
-      "program": "lib/main_calculator.dart",
-      "args": [
-        "-d",
-        "chrome",
-        // "--web-renderer",
-        // "html",
-        "--web-browser-flag",
-        "--disable-web-security",
-      ]
-    },
-    {
-      "name": "Todo",
-      "type": "dart",
-      "request": "launch",
-      "program": "lib/main_todo.dart",
-      "args": [
-        // "--release",
-        // "--profile",
-        // "--flavor",
-        // "OneStore",
-      ]
-    },
-    {
-      "name": "Todo Web",
-      "type": "dart",
-      "request": "launch",
-      "program": "lib/main_todo.dart",
-      "args": [
-        "-d",
-        "chrome",
-        // "--web-renderer",
-        // "html",
-        "--web-browser-flag",
-        "--disable-web-security",
-      ]
-    },
-    {
       "name": "Number Quiz",
       "type": "dart",
       "request": "launch",
@@ -226,6 +174,84 @@
       "type": "dart",
       "request": "launch",
       "program": "lib/main_bucket_list_with_firebase.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+    {
+      "name": "Calculator",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_calculator.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "Calculator Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_calculator.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+    {
+      "name": "Todo",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_todo.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "Todo Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_todo.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+    {
+      "name": "Homepage",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_homepage.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "homepage Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_homepage.dart",
       "args": [
         "-d",
         "chrome",
