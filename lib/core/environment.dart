@@ -7,12 +7,15 @@ import 'package:flutter/services.dart';
 import '../hello_flutter/hello.dart';
 import '../instagram/instagram.dart';
 import '../onboarding/onboarding.dart';
+import '../bucket_list_with_provider/bucket_list_with_provider.dart';
+
 import 'main_common.dart';
 
 enum BuildType {
   hello,
   instagram,
-  onboarding;
+  onboarding,
+  bucketListWithProvider;
 
   const BuildType();
 
@@ -24,6 +27,8 @@ enum BuildType {
         return Instagram();
       case BuildType.onboarding:
         return Onboarding();
+      case BuildType.bucketListWithProvider:
+        return BucketListWithProvider();
       default:
         return Container();
     }
