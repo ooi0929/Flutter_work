@@ -3,15 +3,20 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import '../hello_flutter/hello.dart';
+
 import 'main_common.dart';
 
 enum BuildType {
-  todo;
+  hello;
 
   const BuildType();
 
   Widget build(BuildContext context) {
     switch (this) {
+      case BuildType.hello:
+        return Hello();
       default:
         return Container();
     }
