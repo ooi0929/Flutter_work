@@ -6,10 +6,12 @@ import 'package:flutter/services.dart';
 
 import '../hello_flutter/hello.dart';
 
+import '../instagram/instagram.dart';
 import 'main_common.dart';
 
 enum BuildType {
-  hello;
+  hello,
+  instagram;
 
   const BuildType();
 
@@ -17,6 +19,8 @@ enum BuildType {
     switch (this) {
       case BuildType.hello:
         return Hello();
+      case BuildType.instagram:
+        return Instagram();
       default:
         return Container();
     }
