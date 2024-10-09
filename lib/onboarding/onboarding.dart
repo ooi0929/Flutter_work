@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_workspace/onboarding/home_page.dart';
-import 'package:flutter_workspace/onboarding/intro_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'home_page.dart';
+import 'intro_page.dart';
 
 class Onboarding extends StatelessWidget {
   const Onboarding({super.key});

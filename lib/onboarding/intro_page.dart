@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_workspace/onboarding/home_page.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'home_page.dart';
 
 class IntroPage extends StatefulWidget {
   const IntroPage({super.key});
