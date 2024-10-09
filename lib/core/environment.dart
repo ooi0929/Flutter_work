@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../hello_flutter/hello.dart';
-
 import '../instagram/instagram.dart';
+
 import 'main_common.dart';
 
 enum BuildType {
