@@ -4,18 +4,26 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../calculator/page/calculator.dart';
 import '../hello_flutter/hello.dart';
+import '../homepage/page/home_page.dart';
 import '../instagram/instagram.dart';
 import '../onboarding/onboarding.dart';
 import '../bucket_list_with_provider/bucket_list_with_provider.dart';
 
+import '../todo/page/todo.dart';
 import 'main_common.dart';
 
 enum BuildType {
   hello,
   instagram,
   onboarding,
-  bucketListWithProvider;
+  bucketListWithProvider,
+
+  // 여기부터는 삼촌과의 과제
+  calculator,
+  todo,
+  homepage;
 
   const BuildType();
 
@@ -29,6 +37,14 @@ enum BuildType {
         return Onboarding();
       case BuildType.bucketListWithProvider:
         return BucketListWithProvider();
+
+      // 여기부터는 삼촌과의 과제
+      case BuildType.calculator:
+        return Calculator();
+      case BuildType.todo:
+        return Todo();
+      case BuildType.homepage:
+        return HomePage();
       default:
         return Container();
     }

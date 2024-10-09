@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../bucket_list_with_provider/bucket_service.dart';
+import '../homepage/homepage_app.dart';
 import '../onboarding/onboarding_app.dart';
 
 import 'environment.dart';
@@ -19,6 +20,10 @@ Future<void> mainCommon() async {
   switch (Environment.instance.buildType) {
     case BuildType.hello:
     case BuildType.instagram:
+
+    // 여기부터는 삼촌과의 과제
+    case BuildType.calculator:
+    case BuildType.todo:
       runApp(const MyApp());
       break;
 
@@ -36,6 +41,10 @@ Future<void> mainCommon() async {
         ),
       );
       break;
+
+    // 삼촌과의 과제 라우팅으로 연결하는 곳
+    case BuildType.homepage:
+      runApp(const HomepageApp());
 
     default:
       runApp(Container()); // 기본값: 빈 화면
