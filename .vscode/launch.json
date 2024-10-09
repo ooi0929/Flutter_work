@@ -80,6 +80,32 @@
       ]
     },
     {
+      "name": "Bucket List With Provider",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_bucket_list_with_provider.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "Bucket List With Provider Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_bucket_list_with_provider.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+    {
       "name": "Calculator",
       "type": "dart",
       "request": "launch",
@@ -122,32 +148,6 @@
       "type": "dart",
       "request": "launch",
       "program": "lib/main_todo.dart",
-      "args": [
-        "-d",
-        "chrome",
-        // "--web-renderer",
-        // "html",
-        "--web-browser-flag",
-        "--disable-web-security",
-      ]
-    },
-    {
-      "name": "Bucket List",
-      "type": "dart",
-      "request": "launch",
-      "program": "lib/main_bucket_list.dart",
-      "args": [
-        // "--release",
-        // "--profile",
-        // "--flavor",
-        // "OneStore",
-      ]
-    },
-    {
-      "name": "Bucket List Web",
-      "type": "dart",
-      "request": "launch",
-      "program": "lib/main_bucket_list.dart",
       "args": [
         "-d",
         "chrome",
