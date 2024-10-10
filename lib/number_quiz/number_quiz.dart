@@ -29,7 +29,6 @@ class _NumberQuizState extends State<NumberQuiz> {
     Response result = await Dio().get('http://numbersapi.com/random/trivia');
 
     String trivia = result.data;
-    print(trivia);
     return trivia;
   }
 
