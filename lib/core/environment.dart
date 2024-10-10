@@ -8,6 +8,7 @@ import '../calculator/page/calculator.dart';
 import '../hello_flutter/hello.dart';
 import '../homepage/page/home_page.dart';
 import '../instagram/instagram.dart';
+import '../number_quiz/number_quiz.dart';
 import '../onboarding/onboarding.dart';
 import '../bucket_list/bucket_list.dart';
 import '../bucket_list_with_provider/bucket_list_with_provider.dart';
@@ -21,6 +22,7 @@ enum BuildType {
   onboarding,
   bucketList,
   bucketListWithProvider,
+  numberQuiz,
 
   // 여기부터는 삼촌과의 과제
   calculator,
@@ -41,6 +43,8 @@ enum BuildType {
         return BucketList();
       case BuildType.bucketListWithProvider:
         return BucketListWithProvider();
+      case BuildType.numberQuiz:
+        return NumberQuiz();
 
       // 여기부터는 삼촌과의 과제
       case BuildType.calculator:

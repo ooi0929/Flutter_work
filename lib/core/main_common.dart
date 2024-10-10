@@ -21,6 +21,7 @@ Future<void> mainCommon() async {
     case BuildType.hello:
     case BuildType.instagram:
     case BuildType.bucketList:
+    case BuildType.numberQuiz:
 
     // 여기부터는 삼촌과의 과제
     case BuildType.calculator:
