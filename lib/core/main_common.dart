@@ -20,6 +20,7 @@ Future<void> mainCommon() async {
   switch (Environment.instance.buildType) {
     case BuildType.hello:
     case BuildType.instagram:
+    case BuildType.bucketList:
 
     // 여기부터는 삼촌과의 과제
     case BuildType.calculator:

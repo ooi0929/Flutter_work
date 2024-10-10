@@ -9,6 +9,7 @@ import '../hello_flutter/hello.dart';
 import '../homepage/page/home_page.dart';
 import '../instagram/instagram.dart';
 import '../onboarding/onboarding.dart';
+import '../bucket_list/bucket_list.dart';
 import '../bucket_list_with_provider/bucket_list_with_provider.dart';
 
 import '../todo/page/todo.dart';
@@ -18,6 +19,7 @@ enum BuildType {
   hello,
   instagram,
   onboarding,
+  bucketList,
   bucketListWithProvider,
 
   // 여기부터는 삼촌과의 과제
@@ -35,6 +37,8 @@ enum BuildType {
         return Instagram();
       case BuildType.onboarding:
         return Onboarding();
+      case BuildType.bucketList:
+        return BucketList();
       case BuildType.bucketListWithProvider:
         return BucketListWithProvider();
 
