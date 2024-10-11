@@ -13,6 +13,7 @@ import '../onboarding/onboarding.dart';
 import '../bucket_list/bucket_list.dart';
 import '../bucket_list_with_provider/bucket_list_with_provider.dart';
 
+import '../random_cat/random_cat.dart';
 import '../todo/page/todo.dart';
 import 'main_common.dart';
 
@@ -23,6 +24,7 @@ enum BuildType {
   bucketList,
   bucketListWithProvider,
   numberQuiz,
+  randomCat,
 
   // 여기부터는 삼촌과의 과제
   calculator,
@@ -45,6 +47,8 @@ enum BuildType {
         return BucketListWithProvider();
       case BuildType.numberQuiz:
         return NumberQuiz();
+      case BuildType.randomCat:
+        return RandomCat();
 
       // 여기부터는 삼촌과의 과제
       case BuildType.calculator:

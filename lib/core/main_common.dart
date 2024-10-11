@@ -6,6 +6,7 @@ import '../bucket_list_with_provider/bucket_service.dart';
 import '../homepage/homepage_app.dart';
 import '../onboarding/onboarding_app.dart';
 
+import '../random_cat/cat_service.dart';
 import 'environment.dart';
 import 'my_app.dart';
 
@@ -38,6 +39,17 @@ Future<void> mainCommon() async {
         MultiProvider(
           providers: [
             ChangeNotifierProvider(create: (context) => BucketService()),
+          ],
+          child: const MyApp(),
+        ),
+      );
+      break;
+
+    case BuildType.randomCat:
+      runApp(
+        MultiProvider(
+          providers: [
+            ChangeNotifierProvider(create: (context) => CatService()),
           ],
           child: const MyApp(),
         ),
