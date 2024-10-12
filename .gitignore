@@ -42,5 +42,15 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# Firebase File
+firebase.json 
+lib/firebase_options.dart
+
+# Firebase File (Android)
+android/app/google-services.json
+
+# Firebase File (iOS)
+ios/Runner/GoogleService-Info.plist
+
 # Study
 save_manager.dart
