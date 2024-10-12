@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../bucket_list_with_firebase/bucket_list_with_firebase.dart';
 import '../calculator/page/calculator.dart';
 import '../hello_flutter/hello.dart';
 import '../homepage/page/home_page.dart';
@@ -25,6 +26,7 @@ enum BuildType {
   bucketListWithProvider,
   numberQuiz,
   randomCat,
+  bucketListWithFirebase,
 
   // 여기부터는 삼촌과의 과제
   calculator,
@@ -49,6 +51,8 @@ enum BuildType {
         return NumberQuiz();
       case BuildType.randomCat:
         return RandomCat();
+      case BuildType.bucketListWithFirebase:
+        return BucketListWithFirebase();
 
       // 여기부터는 삼촌과의 과제
       case BuildType.calculator:
