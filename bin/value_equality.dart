@@ -20,7 +20,7 @@ class A {
   }
 
   // hashCode를 얻는 값도 override를 통해 기본 동작을 변경할 수 있다.
-  // hashCode는 보통 Map, Set등의 해시 기반 자료형에서 값을 찾을 때 사용한다. (단, 비교 연산자를 수정하는 경우 hashCode도 같이 수정해야 한다. 안그러면 해시 기반 자료형이 의도와 다르게 동작하게 된다.)
+  // hashCode는 보통 Map, Set등의 해시 기반 자료형에서 값을 찾을 때 사용한다. (단, 비교 연산자를 수정하는 경우 hashCode도 같이 수정해야 한다. 그렇지 않으면 해시 기반 자료형이 의도와 다르게 동작하게 된다.)
   // hashCode 기반의 자료형은 hashCode 값이 변경되지 않는다는 전제하에 구현되므로 불변 객체로 만드는 것이 좋다. (final과 const를 이용)
   @override
   int get hashCode => value.hashCode;
