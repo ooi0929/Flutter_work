@@ -4,21 +4,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../apple_store_with_stateful_widget/page/apple_store_with_stateful_widget.dart';
+import '../bucket_list/bucket_list.dart';
 import '../bucket_list_with_firebase/bucket_list_with_firebase.dart';
+import '../bucket_list_with_provider/bucket_list_with_provider.dart';
 import '../calculator/page/calculator.dart';
 import '../hello_flutter/hello.dart';
 import '../homepage/page/home_page.dart';
 import '../instagram/instagram.dart';
 import '../number_quiz/number_quiz.dart';
 import '../onboarding/onboarding.dart';
-import '../bucket_list/bucket_list.dart';
-import '../bucket_list_with_provider/bucket_list_with_provider.dart';
-
 import '../random_cat/random_cat.dart';
 import '../todo/page/todo.dart';
 import 'main_common.dart';
 
 enum BuildType {
+  // 여기부터는 DevStory 입문
   hello,
   instagram,
   onboarding,
@@ -27,6 +28,9 @@ enum BuildType {
   numberQuiz,
   randomCat,
   bucketListWithFirebase,
+
+  // 여기부터는 DevStory 실전
+  appStoreWithStatefulWidget,
 
   // 여기부터는 삼촌과의 과제
   calculator,
@@ -37,6 +41,7 @@ enum BuildType {
 
   Widget build(BuildContext context) {
     switch (this) {
+      // 여기부터는 DevStory 입문
       case BuildType.hello:
         return Hello();
       case BuildType.instagram:
@@ -53,6 +58,10 @@ enum BuildType {
         return RandomCat();
       case BuildType.bucketListWithFirebase:
         return BucketListWithFirebase();
+
+      // 여기부터는 DevStory 실전
+      case BuildType.appStoreWithStatefulWidget:
+        return AppleStoreWithStatefulWidget();
 
       // 여기부터는 삼촌과의 과제
       case BuildType.calculator:
