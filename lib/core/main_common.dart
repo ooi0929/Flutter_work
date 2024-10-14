@@ -6,7 +6,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_workspace/firebase_options.dart';
 import 'package:provider/provider.dart';
 
-import '../apple_store_with_stateful_widget/app_store_with_stateful_widgetapp.dart';
 import '../bucket_list_with_firebase/auth_service.dart';
 import '../bucket_list_with_firebase/bucket_list_with_firebase_app.dart';
 import '../bucket_list_with_firebase/bucket_service_with_firebase.dart';
@@ -75,8 +74,8 @@ Future<void> mainCommon() async {
       );
       break;
     // 여기부터는 DevStory 실전
-    case BuildType.appStoreWithStatefulWidget:
-      runApp(const AppStoreWithStatefulWidget());
+    case BuildType.appleStoreWithStatefulWidget:
+      runApp(const MyApp());
       break;
 
     // 여기부터는 삼촌과의 과제

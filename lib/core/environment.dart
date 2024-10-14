@@ -30,7 +30,7 @@ enum BuildType {
   bucketListWithFirebase,
 
   // 여기부터는 DevStory 실전
-  appStoreWithStatefulWidget,
+  appleStoreWithStatefulWidget,
 
   // 여기부터는 삼촌과의 과제
   calculator,
@@ -60,7 +60,7 @@ enum BuildType {
         return BucketListWithFirebase();
 
       // 여기부터는 DevStory 실전
-      case BuildType.appStoreWithStatefulWidget:
+      case BuildType.appleStoreWithStatefulWidget:
         return AppleStoreWithStatefulWidget();
 
       // 여기부터는 삼촌과의 과제
