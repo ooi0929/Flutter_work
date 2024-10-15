@@ -75,6 +75,7 @@ Future<void> mainCommon() async {
       break;
     // 여기부터는 DevStory 실전
     case BuildType.appleStoreWithStatefulWidget:
+    case BuildType.appleStoreWithInheritedWidget:
       runApp(const MyApp());
       break;
 

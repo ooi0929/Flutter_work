@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../apple_store_with_inherited_widget/page/apple_store_with_inherited_widget.dart';
 import '../apple_store_with_stateful_widget/page/apple_store_with_stateful_widget.dart';
 import '../bucket_list/bucket_list.dart';
 import '../bucket_list_with_firebase/bucket_list_with_firebase.dart';
@@ -31,6 +32,7 @@ enum BuildType {
 
   // 여기부터는 DevStory 실전
   appleStoreWithStatefulWidget,
+  appleStoreWithInheritedWidget,
 
   // 여기부터는 삼촌과의 과제
   calculator,
@@ -62,6 +64,8 @@ enum BuildType {
       // 여기부터는 DevStory 실전
       case BuildType.appleStoreWithStatefulWidget:
         return AppleStoreWithStatefulWidget();
+      case BuildType.appleStoreWithInheritedWidget:
+        return AppleStoreWithInheritedWidget();
 
       // 여기부터는 삼촌과의 과제
       case BuildType.calculator:
