@@ -77,6 +77,7 @@ Future<void> mainCommon() async {
     case BuildType.appleStoreWithStatefulWidget:
     case BuildType.appleStoreWithInheritedWidget:
     case BuildType.appleStoreWithProvider:
+    case BuildType.appleStoreWithRiverpod:
       runApp(const MyApp());
       break;
 
