@@ -3,13 +3,13 @@ import 'package:firebase_core/firebase_core.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_workspace/firebase_options.dart';
 import 'package:provider/provider.dart';
 
 import '../bucket_list_with_firebase/auth_service.dart';
 import '../bucket_list_with_firebase/bucket_list_with_firebase_app.dart';
 import '../bucket_list_with_firebase/bucket_service_with_firebase.dart';
 import '../bucket_list_with_provider/bucket_service.dart';
+import '../firebase_options.dart';
 import '../homepage/homepage_app.dart';
 import '../onboarding/onboarding_app.dart';
 import '../random_cat/cat_service.dart';
@@ -78,6 +78,7 @@ Future<void> mainCommon() async {
     case BuildType.appleStoreWithInheritedWidget:
     case BuildType.appleStoreWithProvider:
     case BuildType.appleStoreWithRiverpod:
+    case BuildType.appleStoreWithCubit:
       runApp(const MyApp());
       break;
 
