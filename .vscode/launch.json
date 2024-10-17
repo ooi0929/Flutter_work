@@ -314,6 +314,32 @@
       ]
     },
     {
+      "name": "Apple Store With Cubit",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_apple_store_with_cubit.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "Apple Store With Cubit Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_apple_store_with_cubit.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+    {
       "name": "Calculator",
       "type": "dart",
       "request": "launch",
