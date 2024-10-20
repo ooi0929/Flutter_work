@@ -23,6 +23,10 @@ class BadgeBloc extends Bloc<BadgeEvent, int> {
     cartBlocSubs = cartBloc.stream.listen((cartProductList) {
       add(OnCartTotalChange(cartProductList.length));
     });
+
+    on<OnCartTotalChange>(
+      (event, emit) => emit(event.total),
+    );
   }
 
   late final StreamSubscription cartBlocSubs;
