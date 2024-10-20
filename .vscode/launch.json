@@ -339,6 +339,33 @@
         "--disable-web-security",
       ]
     },
+
+    {
+      "name": "Apple Store With Bloc",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_apple_store_with_bloc.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "Apple Store With Bloc Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_apple_store_with_bloc.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
     {
       "name": "Calculator",
       "type": "dart",
