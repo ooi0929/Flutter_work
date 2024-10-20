@@ -79,6 +79,7 @@ Future<void> mainCommon() async {
     case BuildType.appleStoreWithProvider:
     case BuildType.appleStoreWithRiverpod:
     case BuildType.appleStoreWithCubit:
+    case BuildType.appleStoreWithBloc:
       runApp(const MyApp());
       break;
 

@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../apple_store_with_bloc/page/apple_store_with_bloc.dart';
 import '../apple_store_with_cubit/page/apple_store_with_cubit.dart';
 import '../apple_store_with_inherited_widget/page/apple_store_with_inherited_widget.dart';
 import '../apple_store_with_provider.dart/page/apple_store_with_provider.dart';
@@ -39,6 +40,7 @@ enum BuildType {
   appleStoreWithProvider,
   appleStoreWithRiverpod,
   appleStoreWithCubit,
+  appleStoreWithBloc,
 
   // 여기부터는 삼촌과의 과제
   calculator,
@@ -78,6 +80,8 @@ enum BuildType {
         return AppleStoreWithRiverpod();
       case BuildType.appleStoreWithCubit:
         return AppleStoreWithCubit();
+      case BuildType.appleStoreWithBloc:
+        return AppleStoreWithBloc();
 
       // 여기부터는 삼촌과의 과제
       case BuildType.calculator:
