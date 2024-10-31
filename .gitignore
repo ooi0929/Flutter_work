@@ -56,3 +56,7 @@ ios/Runner/GoogleService-Info.plist
 # Study
 test.dart
 save_manager.dart
+
+# intl File
+lib/generated
+lib/l10n
