@@ -22,7 +22,7 @@ class ShoppingView extends StatefulWidget {
 
 class _ShoppingViewState extends State<ShoppingView> {
   // List<Product> productList = [];
-  final productList = ValueNotifier<List<Product>>([]);
+  List<Product> productList = [];
   final TextEditingController textController = TextEditingController();
 
   String get keyword => textController.text.trim();
@@ -33,17 +33,19 @@ class _ShoppingViewState extends State<ShoppingView> {
         'https://gist.githubusercontent.com/nero-angela/d16a5078c7959bf5abf6a9e0f8c2851a/raw/04fb4d21ddd1ba06f0349a890f5e5347d94d677e/ikeaSofaDataIBB.json',
       );
 
-      productList.value = jsonDecode(res.data).map<Product>((json) {
-        return Product.fromJson(json);
-      }).where((product) {
-        /// 키워드가 비어있는 경우 모두 반환
-        if (keyword.isEmpty) return true;
+      setState(() {
+        productList = jsonDecode(res.data).map<Product>((json) {
+          return Product.fromJson(json);
+        }).where((product) {
+          /// 키워드가 비어있는 경우 모두 반환
+          if (keyword.isEmpty) return true;
 
-        /// name이나 brand에 키워드 포함 여부 확인
-        return "${product.name}${product.brand}"
-            .toLowerCase()
-            .contains(keyword.toLowerCase());
-      }).toList();
+          /// name이나 brand에 키워드 포함 여부 확인
+          return "${product.name}${product.brand}"
+              .toLowerCase()
+              .contains(keyword.toLowerCase());
+        }).toList();
+      });
     } catch (e, s) {
       log('Failed to searchProductList', error: e, stackTrace: s);
     }
@@ -110,15 +112,10 @@ class _ShoppingViewState extends State<ShoppingView> {
           ),
 
           // ProductCardList
-          ValueListenableBuilder(
-            valueListenable: productList,
-            builder: (context, productList, _) {
-              return Expanded(
-                child: productList.isEmpty
-                    ? const ProductEmpty()
-                    : ProductCardGrid(productList),
-              );
-            },
+          Expanded(
+            child: productList.isEmpty
+                ? const ProductEmpty()
+                : ProductCardGrid(productList),
           ),
         ],
       ),
