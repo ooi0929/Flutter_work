@@ -11,6 +11,10 @@ import '../bucket_list_with_firebase/bucket_service_with_firebase.dart';
 import '../bucket_list_with_provider/bucket_service.dart';
 import '../firebase_options.dart';
 import '../homepage/homepage_app.dart';
+import '../house_of_tomorrow/house_of_tomorrow.dart';
+import '../house_of_tomorrow/src/service/cart_service.dart';
+import '../house_of_tomorrow/src/service/lang_service.dart';
+import '../house_of_tomorrow/src/service/theme_service.dart';
 import '../onboarding/onboarding_app.dart';
 import '../random_cat/cat_service.dart';
 import 'environment.dart';
@@ -82,6 +86,24 @@ Future<void> mainCommon() async {
     case BuildType.appleStoreWithBloc:
       runApp(const MyApp());
       break;
+
+    case BuildType.houseOfTomorrow:
+      runApp(
+        MultiProvider(
+          providers: [
+            ChangeNotifierProvider(
+              create: (context) => ThemeService(),
+            ),
+            ChangeNotifierProvider(
+              create: (context) => LangService(),
+            ),
+            ChangeNotifierProvider(
+              create: (context) => CartService(),
+            )
+          ],
+          child: const HouseOfTomorrow(),
+        ),
+      );
 
     // 여기부터는 삼촌과의 과제
     case BuildType.calculator:
