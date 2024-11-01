@@ -12,9 +12,20 @@ import '../bucket_list_with_provider/bucket_service.dart';
 import '../firebase_options.dart';
 import '../homepage/homepage_app.dart';
 import '../house_of_tomorrow/house_of_tomorrow.dart';
-import '../house_of_tomorrow/src/service/cart_service.dart';
-import '../house_of_tomorrow/src/service/lang_service.dart';
-import '../house_of_tomorrow/src/service/theme_service.dart';
+import '../house_of_tomorrow/src/service/cart_service.dart'
+    as house_of_tomorrow;
+import '../house_of_tomorrow/src/service/lang_service.dart'
+    as house_of_tomorrow;
+import '../house_of_tomorrow/src/service/theme_service.dart'
+    as house_of_tomorrow;
+import '../house_of_tomorrow_mvvm/house_of_tomorrow_mvvm.dart';
+import '../house_of_tomorrow_mvvm/src/repository/product_repository.dart';
+import '../house_of_tomorrow_mvvm/src/service/cart_service.dart'
+    as house_of_tomorrow_mvvm;
+import '../house_of_tomorrow_mvvm/src/service/lang_service.dart'
+    as house_of_tomorrow_mvvm;
+import '../house_of_tomorrow_mvvm/src/service/theme_service.dart'
+    as house_of_tomorrow_mvvm;
 import '../onboarding/onboarding_app.dart';
 import '../random_cat/cat_service.dart';
 import 'environment.dart';
@@ -92,16 +103,37 @@ Future<void> mainCommon() async {
         MultiProvider(
           providers: [
             ChangeNotifierProvider(
-              create: (context) => ThemeService(),
+              create: (context) => house_of_tomorrow.ThemeService(),
             ),
             ChangeNotifierProvider(
-              create: (context) => LangService(),
+              create: (context) => house_of_tomorrow.LangService(),
             ),
             ChangeNotifierProvider(
-              create: (context) => CartService(),
+              create: (context) => house_of_tomorrow.CartService(),
             )
           ],
           child: const HouseOfTomorrow(),
+        ),
+      );
+
+    case BuildType.houseOfTomorrowMVVM:
+      runApp(
+        MultiProvider(
+          providers: [
+            Provider(
+              create: (context) => ProductRepository(),
+            ),
+            ChangeNotifierProvider(
+              create: (context) => house_of_tomorrow_mvvm.ThemeService(),
+            ),
+            ChangeNotifierProvider(
+              create: (context) => house_of_tomorrow_mvvm.LangService(),
+            ),
+            ChangeNotifierProvider(
+              create: (context) => house_of_tomorrow_mvvm.CartService(),
+            )
+          ],
+          child: const HouseOfTomorrowMvvm(),
         ),
       );
 

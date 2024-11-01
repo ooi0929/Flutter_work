@@ -17,6 +17,7 @@ import '../calculator/page/calculator.dart';
 import '../hello_flutter/hello.dart';
 import '../homepage/page/home_page.dart';
 import '../house_of_tomorrow/house_of_tomorrow.dart';
+import '../house_of_tomorrow_mvvm/house_of_tomorrow_mvvm.dart';
 import '../instagram/instagram.dart';
 import '../number_quiz/number_quiz.dart';
 import '../onboarding/onboarding.dart';
@@ -43,6 +44,7 @@ enum BuildType {
   appleStoreWithCubit,
   appleStoreWithBloc,
   houseOfTomorrow,
+  houseOfTomorrowMVVM,
 
   // 여기부터는 삼촌과의 과제
   calculator,
@@ -86,6 +88,8 @@ enum BuildType {
         return AppleStoreWithBloc();
       case BuildType.houseOfTomorrow:
         return HouseOfTomorrow();
+      case BuildType.houseOfTomorrowMVVM:
+        return HouseOfTomorrowMvvm();
 
       // 여기부터는 삼촌과의 과제
       case BuildType.calculator:
