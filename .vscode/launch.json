@@ -392,6 +392,32 @@
       ]
     },
     {
+      "name": "House Of Tomorrow MVVM",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_house_of_tomorrow.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "House Of Tomorrow MVVM Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main_house_of_tomorrow.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+    {
       "name": "Calculator",
       "type": "dart",
       "request": "launch",
