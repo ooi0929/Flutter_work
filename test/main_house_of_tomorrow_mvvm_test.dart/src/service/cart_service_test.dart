@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/model/cart_item.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/service/cart_service.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/model/cart_item.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/service/cart_service.dart';
 
 import '../../dummy.dart';
 

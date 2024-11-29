@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/house_of_tomorrow_mvvm.dart'
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/house_of_tomorrow_mvvm.dart'
     as app;
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/view/cart/widget/cart_checkout_dialog.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/view/shopping/widget/product_card.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/theme/component/cart_button.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/theme/component/color_picket.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/theme/component/counter_button.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/util/lang/generated/l10n.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/view/cart/widget/cart_checkout_dialog.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/view/shopping/widget/product_card.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/theme/component/cart_button.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/theme/component/color_picket.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/theme/component/counter_button.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/util/lang/generated/l10n.dart';
 import 'package:integration_test/integration_test.dart';
 
 void main() {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/service/cart_service.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/service/theme_service.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/theme/component/cart_button.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/service/cart_service.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/service/theme_service.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/theme/component/cart_button.dart';
 import 'package:provider/provider.dart';
 
 import '../../dummy.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/repository/product_repository.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/view/shopping/shopping_view_model.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/repository/product_repository.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/view/shopping/shopping_view_model.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/model/cart_item.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/model/lang.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/model/product.dart';
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/model/product_color.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/model/cart_item.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/model/lang.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/model/product.dart';
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/model/product_color.dart';
 
 abstract class Dummy {
   static const Product product = Product(

@@ -6,9 +6,9 @@
 import 'dart:async' as _i5;
 
 import 'package:dio/dio.dart' as _i2;
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/model/product.dart'
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/model/product.dart'
     as _i6;
-import 'package:flutter_workspace/house_of_tomorrow_mvvm/src/repository/product_repository.dart'
+import 'package:flutter_workspace/devstory_intermediate/house_of_tomorrow_mvvm/src/repository/product_repository.dart'
     as _i3;
 import 'package:mockito/mockito.dart' as _i1;
 import 'package:mockito/src/dummies.dart' as _i4;
