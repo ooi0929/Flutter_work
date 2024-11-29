@@ -5,7 +5,7 @@
       "name": "Hello Flutter",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_hello_flutter.dart",
+      "program": "lib/devstory_beginner/main_hello_flutter.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -17,7 +17,7 @@
       "name": "Hello Flutter Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_hello_flutter.dart",
+      "program": "lib/devstory_beginner/main_hello_flutter.dart",
       "args": [
         "-d",
         "chrome",
@@ -31,7 +31,7 @@
       "name": "Instagram",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_instagram.dart",
+      "program": "lib/devstory_beginner/main_instagram.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -43,7 +43,7 @@
       "name": "Instagram Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_instagram.dart",
+      "program": "lib/devstory_beginner/main_instagram.dart",
       "args": [
         "-d",
         "chrome",
@@ -57,7 +57,7 @@
       "name": "Onboarding",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_onboarding.dart",
+      "program": "lib/devstory_beginner/main_onboarding.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -69,7 +69,7 @@
       "name": "Onboarding Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_onboarding.dart",
+      "program": "lib/devstory_beginner/main_onboarding.dart",
       "args": [
         "-d",
         "chrome",
@@ -83,7 +83,7 @@
       "name": "Bucket List",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_bucket_list.dart",
+      "program": "lib/devstory_beginner/main_bucket_list.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -95,7 +95,7 @@
       "name": "Bucket List Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_bucket_list.dart",
+      "program": "lib/devstory_beginner/main_bucket_list.dart",
       "args": [
         "-d",
         "chrome",
@@ -109,7 +109,7 @@
       "name": "Bucket List With Provider",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_bucket_list_with_provider.dart",
+      "program": "lib/devstory_beginner/main_bucket_list_with_provider.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -121,7 +121,7 @@
       "name": "Bucket List With Provider Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_bucket_list_with_provider.dart",
+      "program": "lib/devstory_beginner/main_bucket_list_with_provider.dart",
       "args": [
         "-d",
         "chrome",
@@ -135,7 +135,7 @@
       "name": "Number Quiz",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_number_quiz.dart",
+      "program": "lib/devstory_beginner/main_number_quiz.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -147,7 +147,7 @@
       "name": "Number Quiz Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_number_quiz.dart",
+      "program": "lib/devstory_beginner/main_number_quiz.dart",
       "args": [
         "-d",
         "chrome",
@@ -161,7 +161,7 @@
       "name": "Random Cat",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_random_cat.dart",
+      "program": "lib/devstory_beginner/main_random_cat.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -173,7 +173,7 @@
       "name": "Random Cat Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_random_cat.dart",
+      "program": "lib/devstory_beginner/main_random_cat.dart",
       "args": [
         "-d",
         "chrome",
@@ -187,7 +187,7 @@
       "name": "Bucket List With Firebase",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_bucket_list_with_firebase.dart",
+      "program": "lib/devstory_beginner/main_bucket_list_with_firebase.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -199,7 +199,7 @@
       "name": "Bucket List With Firebsae Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_bucket_list_with_firebase.dart",
+      "program": "lib/devstory_beginner/main_bucket_list_with_firebase.dart",
       "args": [
         "-d",
         "chrome",
@@ -213,7 +213,7 @@
       "name": "Apple Store With Stateful Widget",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_apple_store_with_stateful_widget.dart",
+      "program": "lib/devstory_intermediate/main_apple_store_with_stateful_widget.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -225,7 +225,7 @@
       "name": "Apple Store With Stateful Widget Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_apple_store_with_stateful_widget.dart",
+      "program": "lib/devstory_intermediate/main_apple_store_with_stateful_widget.dart",
       "args": [
         "-d",
         "chrome",
@@ -239,7 +239,7 @@
       "name": "Apple Store With Inherited Widget",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_apple_store_with_inherited_widget.dart",
+      "program": "lib/devstory_intermediate/main_apple_store_with_inherited_widget.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -251,7 +251,7 @@
       "name": "Apple Store With Inherited Widget Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_apple_store_with_inherited_widget.dart",
+      "program": "lib/devstory_intermediate/main_apple_store_with_inherited_widget.dart",
       "args": [
         "-d",
         "chrome",
@@ -265,7 +265,7 @@
       "name": "Apple Store With Provider",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_apple_store_with_provider.dart",
+      "program": "lib/devstory_intermediate/main_apple_store_with_provider.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -277,7 +277,7 @@
       "name": "Apple Store With Provider Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_apple_store_with_provider.dart",
+      "program": "lib/devstory_intermediate/main_apple_store_with_provider.dart",
       "args": [
         "-d",
         "chrome",
@@ -291,7 +291,7 @@
       "name": "Apple Store With Riverpod",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_apple_store_with_riverpod.dart",
+      "program": "lib/devstory_intermediate/main_apple_store_with_riverpod.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -303,7 +303,7 @@
       "name": "Apple Store With Riverpod Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_apple_store_with_riverpod.dart",
+      "program": "lib/devstory_intermediate/main_apple_store_with_riverpod.dart",
       "args": [
         "-d",
         "chrome",
@@ -317,7 +317,7 @@
       "name": "Apple Store With Cubit",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_apple_store_with_cubit.dart",
+      "program": "lib/devstory_intermediate/main_apple_store_with_cubit.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -329,7 +329,7 @@
       "name": "Apple Store With Cubit Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_apple_store_with_cubit.dart",
+      "program": "lib/devstory_intermediate/main_apple_store_with_cubit.dart",
       "args": [
         "-d",
         "chrome",
@@ -343,7 +343,7 @@
       "name": "Apple Store With Bloc",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_apple_store_with_bloc.dart",
+      "program": "lib/devstory_intermediate/main_apple_store_with_bloc.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -355,7 +355,7 @@
       "name": "Apple Store With Bloc Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_apple_store_with_bloc.dart",
+      "program": "lib/devstory_intermediate/main_apple_store_with_bloc.dart",
       "args": [
         "-d",
         "chrome",
@@ -369,7 +369,7 @@
       "name": "House Of Tomorrow",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_house_of_tomorrow.dart",
+      "program": "lib/devstory_intermediate/main_house_of_tomorrow.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -381,7 +381,7 @@
       "name": "House Of Tomorrow Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_house_of_tomorrow.dart",
+      "program": "lib/devstory_intermediate/main_house_of_tomorrow.dart",
       "args": [
         "-d",
         "chrome",
@@ -395,7 +395,7 @@
       "name": "House Of Tomorrow MVVM",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_house_of_tomorrow.dart",
+      "program": "lib/devstory_intermediate/main_house_of_tomorrow.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -407,7 +407,7 @@
       "name": "House Of Tomorrow MVVM Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_house_of_tomorrow.dart",
+      "program": "lib/devstory_intermediate/main_house_of_tomorrow.dart",
       "args": [
         "-d",
         "chrome",
@@ -421,7 +421,7 @@
       "name": "Calculator",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_calculator.dart",
+      "program": "lib/uncle/main_calculator.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -433,7 +433,7 @@
       "name": "Calculator Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_calculator.dart",
+      "program": "lib/uncle/main_calculator.dart",
       "args": [
         "-d",
         "chrome",
@@ -447,7 +447,7 @@
       "name": "Todo",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_todo.dart",
+      "program": "lib/uncle/main_todo.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -459,7 +459,7 @@
       "name": "Todo Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_todo.dart",
+      "program": "lib/uncle/main_todo.dart",
       "args": [
         "-d",
         "chrome",
@@ -473,7 +473,7 @@
       "name": "Homepage",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_homepage.dart",
+      "program": "lib/uncle/main_homepage.dart",
       "args": [
         // "--release",
         // "--profile",
@@ -485,7 +485,7 @@
       "name": "homepage Web",
       "type": "dart",
       "request": "launch",
-      "program": "lib/main_homepage.dart",
+      "program": "lib/uncle/main_homepage.dart",
       "args": [
         "-d",
         "chrome",
