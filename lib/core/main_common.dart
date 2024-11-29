@@ -5,29 +5,29 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
-import '../bucket_list_with_firebase/auth_service.dart';
-import '../bucket_list_with_firebase/bucket_list_with_firebase_app.dart';
-import '../bucket_list_with_firebase/bucket_service_with_firebase.dart';
-import '../bucket_list_with_provider/bucket_service.dart';
+import '../devstory_beginner/bucket_list_with_firebase/auth_service.dart';
+import '../devstory_beginner/bucket_list_with_firebase/bucket_list_with_firebase_app.dart';
+import '../devstory_beginner/bucket_list_with_firebase/bucket_service_with_firebase.dart';
+import '../devstory_beginner/bucket_list_with_provider/bucket_service.dart';
+import '../devstory_beginner/onboarding/onboarding_app.dart';
+import '../devstory_beginner/random_cat/cat_service.dart';
+import '../devstory_intermediate/house_of_tomorrow/house_of_tomorrow.dart';
+import '../devstory_intermediate/house_of_tomorrow/src/service/cart_service.dart'
+    as house_of_tomorrow;
+import '../devstory_intermediate/house_of_tomorrow/src/service/lang_service.dart'
+    as house_of_tomorrow;
+import '../devstory_intermediate/house_of_tomorrow/src/service/theme_service.dart'
+    as house_of_tomorrow;
+import '../devstory_intermediate/house_of_tomorrow_mvvm/house_of_tomorrow_mvvm.dart';
+import '../devstory_intermediate/house_of_tomorrow_mvvm/src/repository/product_repository.dart';
+import '../devstory_intermediate/house_of_tomorrow_mvvm/src/service/cart_service.dart'
+    as house_of_tomorrow_mvvm;
+import '../devstory_intermediate/house_of_tomorrow_mvvm/src/service/lang_service.dart'
+    as house_of_tomorrow_mvvm;
+import '../devstory_intermediate/house_of_tomorrow_mvvm/src/service/theme_service.dart'
+    as house_of_tomorrow_mvvm;
 import '../firebase_options.dart';
-import '../homepage/homepage_app.dart';
-import '../house_of_tomorrow/house_of_tomorrow.dart';
-import '../house_of_tomorrow/src/service/cart_service.dart'
-    as house_of_tomorrow;
-import '../house_of_tomorrow/src/service/lang_service.dart'
-    as house_of_tomorrow;
-import '../house_of_tomorrow/src/service/theme_service.dart'
-    as house_of_tomorrow;
-import '../house_of_tomorrow_mvvm/house_of_tomorrow_mvvm.dart';
-import '../house_of_tomorrow_mvvm/src/repository/product_repository.dart';
-import '../house_of_tomorrow_mvvm/src/service/cart_service.dart'
-    as house_of_tomorrow_mvvm;
-import '../house_of_tomorrow_mvvm/src/service/lang_service.dart'
-    as house_of_tomorrow_mvvm;
-import '../house_of_tomorrow_mvvm/src/service/theme_service.dart'
-    as house_of_tomorrow_mvvm;
-import '../onboarding/onboarding_app.dart';
-import '../random_cat/cat_service.dart';
+import '../uncle/homepage/homepage_app.dart';
 import 'environment.dart';
 import 'my_app.dart';
 
@@ -50,6 +50,8 @@ Future<void> mainCommon() async {
     case BuildType.instagram:
     case BuildType.bucketList:
     case BuildType.numberQuiz:
+      runApp(const MyApp());
+
     case BuildType.onboarding:
       runApp(const OnboardingApp());
       break;
