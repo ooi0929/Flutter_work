@@ -4,24 +4,25 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../codefactory_intermediate/restaurant/restaurant.dart';
+import '../devstory_beginner/bucket_list/bucket_list.dart';
+import '../devstory_beginner/bucket_list_with_firebase/bucket_list_with_firebase.dart';
+import '../devstory_beginner/bucket_list_with_provider/bucket_list_with_provider.dart';
+import '../devstory_beginner/hello_flutter/hello.dart';
+import '../devstory_beginner/instagram/instagram.dart';
+import '../devstory_beginner/number_quiz/number_quiz.dart';
+import '../devstory_beginner/onboarding/onboarding.dart';
+import '../devstory_beginner/random_cat/random_cat.dart';
 import '../devstory_intermediate/apple_store_with_bloc/page/apple_store_with_bloc.dart';
 import '../devstory_intermediate/apple_store_with_cubit/page/apple_store_with_cubit.dart';
 import '../devstory_intermediate/apple_store_with_inherited_widget/page/apple_store_with_inherited_widget.dart';
 import '../devstory_intermediate/apple_store_with_provider.dart/page/apple_store_with_provider.dart';
 import '../devstory_intermediate/apple_store_with_riverpod/page/apple_store_with_riverpod.dart';
 import '../devstory_intermediate/apple_store_with_stateful_widget/page/apple_store_with_stateful_widget.dart';
-import '../devstory_beginner/bucket_list/bucket_list.dart';
-import '../devstory_beginner/bucket_list_with_firebase/bucket_list_with_firebase.dart';
-import '../devstory_beginner/bucket_list_with_provider/bucket_list_with_provider.dart';
-import '../uncle/calculator/page/calculator.dart';
-import '../devstory_beginner/hello_flutter/hello.dart';
-import '../uncle/homepage/page/home_page.dart';
 import '../devstory_intermediate/house_of_tomorrow/house_of_tomorrow.dart';
 import '../devstory_intermediate/house_of_tomorrow_mvvm/house_of_tomorrow_mvvm.dart';
-import '../devstory_beginner/instagram/instagram.dart';
-import '../devstory_beginner/number_quiz/number_quiz.dart';
-import '../devstory_beginner/onboarding/onboarding.dart';
-import '../devstory_beginner/random_cat/random_cat.dart';
+import '../uncle/calculator/page/calculator.dart';
+import '../uncle/homepage/page/home_page.dart';
 import '../uncle/todo/page/todo.dart';
 import 'main_common.dart';
 
@@ -36,7 +37,7 @@ enum BuildType {
   randomCat,
   bucketListWithFirebase,
 
-  // 여기부터는 DevStory 실전
+  // 여기부터는 DevStory 중급
   appleStoreWithStatefulWidget,
   appleStoreWithInheritedWidget,
   appleStoreWithProvider,
@@ -45,6 +46,11 @@ enum BuildType {
   appleStoreWithBloc,
   houseOfTomorrow,
   houseOfTomorrowMVVM,
+
+  // 여기부터는 CodeFactory 입문
+
+  // 여기부터는 CodeFactory 중급
+  restaurant,
 
   // 여기부터는 삼촌과의 과제
   calculator,
@@ -90,6 +96,12 @@ enum BuildType {
         return HouseOfTomorrow();
       case BuildType.houseOfTomorrowMVVM:
         return HouseOfTomorrowMvvm();
+
+      // 여기부터는 CodeFactory 입문
+
+      // 여기부터는 CodeFactory 중급
+      case BuildType.restaurant:
+        return Restaurant();
 
       // 여기부터는 삼촌과의 과제
       case BuildType.calculator:

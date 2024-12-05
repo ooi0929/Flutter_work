@@ -90,7 +90,8 @@ Future<void> mainCommon() async {
         ),
       );
       break;
-    // 여기부터는 DevStory 실전
+
+    // 여기부터는 DevStory 중급
     case BuildType.appleStoreWithStatefulWidget:
     case BuildType.appleStoreWithInheritedWidget:
     case BuildType.appleStoreWithProvider:
@@ -117,6 +118,7 @@ Future<void> mainCommon() async {
           child: const HouseOfTomorrow(),
         ),
       );
+      break;
 
     case BuildType.houseOfTomorrowMVVM:
       runApp(
@@ -138,6 +140,13 @@ Future<void> mainCommon() async {
           child: const HouseOfTomorrowMvvm(),
         ),
       );
+
+    // 여기부터는 CodeFactory 입문
+
+    // 여기부터는 CodeFactory 중급
+    case BuildType.restaurant:
+      runApp(const MyApp());
+      break;
 
     // 여기부터는 삼촌과의 과제
     case BuildType.calculator:
