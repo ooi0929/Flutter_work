@@ -1,6 +1,7 @@
 {
   "version": "0.2.0",
   "configurations": [
+    // 여기부터는 DevStody 입문
     {
       "name": "Hello Flutter",
       "type": "dart",
@@ -209,6 +210,8 @@
         "--disable-web-security",
       ]
     },
+
+    // 여기부터는 DevStory 중급
     {
       "name": "Apple Store With Stateful Widget",
       "type": "dart",
@@ -417,6 +420,37 @@
         "--disable-web-security",
       ]
     },
+    // 여기부터는 CodeFactory 입문
+
+    // 여기부터는 CodeFactory 중급
+    {
+      "name": "Restaurant",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/codefactory_intermediate/main_restaurant.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "Restaurant Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/codefactory_intermediate/main_restaurant.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
+
+    // 여기부터는 삼촌과의 과제
     {
       "name": "Calculator",
       "type": "dart",
