@@ -449,6 +449,32 @@
         "--disable-web-security",
       ]
     },
+    {
+      "name": "State Management",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/codefactory_intermediate/main_state_management.dart",
+      "args": [
+        // "--release",
+        // "--profile",
+        // "--flavor",
+        // "OneStore",
+      ]
+    },
+    {
+      "name": "State Management Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/codefactory_intermediate/main_state_management.dart",
+      "args": [
+        "-d",
+        "chrome",
+        // "--web-renderer",
+        // "html",
+        "--web-browser-flag",
+        "--disable-web-security",
+      ]
+    },
 
     // 여기부터는 삼촌과의 과제
     {
