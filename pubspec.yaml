@@ -93,6 +93,12 @@ flutter:
   assets:
     - assets/
     - assets/icons/
+    - assets/img/misc/
+    - assets/img/food/
+    - assets/img/logo/
+    - assets/svg/icon/
+    - assets/rive/
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see
@@ -122,6 +128,21 @@ flutter:
           weight: 400
         - asset: assets/fonts/NotoSans-SemiBold.ttf
           weight: 600
+    - family: noto_sans_kr
+      fonts:
+        - asset: assets/fonts/NotoSans-Black.otf
+          weight: 900
+        - asset: assets/fonts/NotoSans-Bold.otf
+          weight: 700
+        - asset: assets/fonts/NotoSans-Medium.otf
+          weight: 500
+        - asset: assets/fonts/NotoSans-Regular.otf
+          weight: 400
+        - asset: assets/fonts/NotoSans-Light.otf
+          weight: 300
+        - asset: assets/fonts/NotoSans-Thin.otf
+          weight: 100
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 flutter_intl:
