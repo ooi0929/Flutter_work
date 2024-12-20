@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../component/custom_elevated_button.dart';
 import '../layout/default_layout.dart';
 import 'auto_dispose_modifier_screen.dart';
+import 'code_generation_screen.dart';
 import 'family_modifier_screen.dart';
 import 'future_provider_screen.dart';
 import 'listen_provider_screen.dart';
@@ -119,6 +120,17 @@ class HomeScreen extends StatelessWidget {
               );
             },
             child: Text('ProviderScreen'),
+          ),
+          CustomElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => CodeGenerationScreen(),
+                ),
+              );
+            },
+            child: Text('CodeGenerationScreen'),
           ),
         ],
       ),
