@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../codefactory_intermediate/restaurant/restaurant.dart';
+import '../codefactory_intermediate/state_management/state_management.dart';
 import '../devstory_beginner/bucket_list/bucket_list.dart';
 import '../devstory_beginner/bucket_list_with_firebase/bucket_list_with_firebase.dart';
 import '../devstory_beginner/bucket_list_with_provider/bucket_list_with_provider.dart';
@@ -51,6 +52,7 @@ enum BuildType {
 
   // 여기부터는 CodeFactory 중급
   restaurant,
+  stateManagement,
 
   // 여기부터는 삼촌과의 과제
   calculator,
@@ -102,6 +104,8 @@ enum BuildType {
       // 여기부터는 CodeFactory 중급
       case BuildType.restaurant:
         return Restaurant();
+      case BuildType.stateManagement:
+        return StateManagement();
 
       // 여기부터는 삼촌과의 과제
       case BuildType.calculator:

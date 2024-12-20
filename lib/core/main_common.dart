@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
+import '../codefactory_intermediate/state_management/state_management.dart';
 import '../devstory_beginner/bucket_list_with_firebase/auth_service.dart';
 import '../devstory_beginner/bucket_list_with_firebase/bucket_list_with_firebase_app.dart';
 import '../devstory_beginner/bucket_list_with_firebase/bucket_service_with_firebase.dart';
@@ -147,6 +148,9 @@ Future<void> mainCommon() async {
     case BuildType.restaurant:
       runApp(const MyApp());
       break;
+
+    case BuildType.stateManagement:
+      runApp(StateManagement());
 
     // 여기부터는 삼촌과의 과제
     case BuildType.calculator:
