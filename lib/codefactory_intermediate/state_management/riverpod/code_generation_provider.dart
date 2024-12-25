@@ -14,7 +14,7 @@ part 'code_generation_provider.g.dart';
 // 기존에는 한 가지의 파라미터만 전할 수 있었기에 여러 개를 전달하려면 Collection을 사용하거나 클래스를 생성해서 넘겨줬어야 했다.
 
 // [1]
-final _testProvider = Provider<String>((ref) => 'Hello Code Generation');
+// final _testProvider = Provider<String>((ref) => 'Hello Code Generation');
 
 // _testProvider와 같이 프로바이더를 어떻게 코드 생성기로 만들냐?
 
@@ -71,9 +71,9 @@ class Parameter {
   });
 }
 
-final _testFamilyProvider = Provider.family<int, Parameter>(
-  (ref, Parameter) => Parameter.number1 + Parameter.number2,
-);
+// final _testFamilyProvider = Provider.family<int, Parameter>(
+//   (ref, Parameter) => Parameter.number1 + Parameter.number2,
+// );
 
 // 비동기가 아닌 동기로 제어할거니까 (우선은)
 // 파라미터를 전달받기위해 일반 함수를 작성하듯이 똑같이 해주면 된다.

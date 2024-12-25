@@ -68,7 +68,7 @@ class StateProviderScreen extends ConsumerWidget {
 
 // 여기서만 사용할 클래스이니까 _ 붙여서 사용
 class _NextScreen extends ConsumerWidget {
-  const _NextScreen({super.key});
+  const _NextScreen();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
