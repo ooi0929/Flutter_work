@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
+import '../codefactory_intermediate/go_route_v7/go_route_v7.dart';
+import '../codefactory_intermediate/restaurant/restaurant.dart';
 import '../codefactory_intermediate/state_management/state_management.dart';
 import '../devstory_beginner/bucket_list_with_firebase/auth_service.dart';
 import '../devstory_beginner/bucket_list_with_firebase/bucket_list_with_firebase_app.dart';
@@ -146,11 +148,14 @@ Future<void> mainCommon() async {
 
     // 여기부터는 CodeFactory 중급
     case BuildType.restaurant:
-      runApp(const MyApp());
+      runApp(const Restaurant());
       break;
 
     case BuildType.stateManagement:
-      runApp(StateManagement());
+      runApp(const StateManagement());
+
+    case BuildType.goRouteV7:
+      runApp(const GoRouteV7());
 
     // 여기부터는 삼촌과의 과제
     case BuildType.calculator:
@@ -162,6 +167,7 @@ Future<void> mainCommon() async {
     case BuildType.homepage:
       runApp(const HomepageApp());
 
+    // ignore: unreachable_switch_default
     default:
       runApp(Container()); // 기본값: 빈 화면
       break;

@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../codefactory_intermediate/go_route_v7/go_route_v7.dart';
 import '../codefactory_intermediate/restaurant/restaurant.dart';
 import '../codefactory_intermediate/state_management/state_management.dart';
 import '../devstory_beginner/bucket_list/bucket_list.dart';
@@ -53,6 +54,7 @@ enum BuildType {
   // 여기부터는 CodeFactory 중급
   restaurant,
   stateManagement,
+  goRouteV7,
 
   // 여기부터는 삼촌과의 과제
   calculator,
@@ -106,6 +108,8 @@ enum BuildType {
         return Restaurant();
       case BuildType.stateManagement:
         return StateManagement();
+      case BuildType.goRouteV7:
+        return GoRouteV7();
 
       // 여기부터는 삼촌과의 과제
       case BuildType.calculator:
@@ -114,6 +118,7 @@ enum BuildType {
         return Todo();
       case BuildType.homepage:
         return HomePage();
+      // ignore: unreachable_switch_default
       default:
         return Container();
     }
