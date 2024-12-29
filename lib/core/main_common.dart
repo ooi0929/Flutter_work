@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart' hide Provider, ChangeNotifierProvider;
 import 'package:provider/provider.dart';
 
 import '../codefactory_intermediate/go_route_v7/go_route_v7.dart';
@@ -148,7 +149,11 @@ Future<void> mainCommon() async {
 
     // 여기부터는 CodeFactory 중급
     case BuildType.restaurant:
-      runApp(const Restaurant());
+      runApp(
+        ProviderScope(
+          child: const Restaurant(),
+        ),
+      );
       break;
 
     case BuildType.stateManagement:
